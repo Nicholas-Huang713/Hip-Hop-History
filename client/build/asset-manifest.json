@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a55eb1af.chunk.css",
+    "main.js": "/static/js/main.60e7ffe7.chunk.js",
+    "main.js.map": "/static/js/main.60e7ffe7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.844668cf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.844668cf.js.map",
+    "static/js/2.43aa5491.chunk.js": "/static/js/2.43aa5491.chunk.js",
+    "static/js/2.43aa5491.chunk.js.map": "/static/js/2.43aa5491.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f16d6e10ccbc3d13ec68416ee22e42e7.js": "/precache-manifest.f16d6e10ccbc3d13ec68416ee22e42e7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a55eb1af.chunk.css.map": "/static/css/main.a55eb1af.chunk.css.map",
+    "static/js/2.43aa5491.chunk.js.LICENSE.txt": "/static/js/2.43aa5491.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/turntable3.6a2d0c9f.jpg",
+    "static/media/liked.png": "/static/media/liked.cbd99399.png",
+    "static/media/unliked.png": "/static/media/unliked.ebdb60f0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.844668cf.js",
+    "static/js/2.43aa5491.chunk.js",
+    "static/css/main.a55eb1af.chunk.css",
+    "static/js/main.60e7ffe7.chunk.js"
+  ]
+}
