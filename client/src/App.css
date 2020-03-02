@@ -1,0 +1,213 @@
+.App {
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+.page_header{
+  padding-top: 5px;
+  height: 100px;
+  width: 100%;
+}
+
+.logo{
+  width: 90px;
+  height: 90px;
+  border-radius: 25px;
+  margin-bottom: 60%;;
+}
+
+.era-title{
+  width: 180px;
+  padding-left: 10px;
+}
+
+.home-style{
+  background-image: url('./images/turntable.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.header_item{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.logform-container{
+  background-image: url('./images/hiphopcrowd1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+} 
+
+.logform-style {
+  width: 50%; 
+  margin-left: 25%;
+  padding-top: 6%; 
+  color: #026e81;
+}
+
+.regform-container{
+  background-image: url('./images/mic.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+} 
+
+.regform-style{
+  width: 50%; 
+  margin-left: 25%;
+  padding: 2% 1%; 
+  color: #026e81;
+}
+
+.dashboard{
+  height: 500px;
+  width: 100%;
+  background-image: url('./images/records.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 3px 3px 3px grey;
+  padding-top: 5px;
+}
+
+.dashboard1{
+  height: 500px;
+  width: 100%;
+  background-image: url('./images/djblue.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.dashboard2{
+  height: 500px;
+  width: 100%;
+  background-image: url('./images/audience.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.dashboard3{
+  height: 500px;
+  width: 100%;
+  background-image: url('./images/records.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.dashboard4{
+  height: 500px;
+  width: 100%;
+  background-image: url('./images/turntable2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.dashboard-list-style{
+  margin-left: 20px;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.dashboard-list-style::-webkit-scrollbar {
+  display: none
+}
+
+.like-button{
+  width: 20px;
+  height: 20px;
+}
+
+.favorite-list-unlike-button {
+  border: none;
+  background-color: transparent;
+}
+
+.list-container{
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.list-container::-webkit-scrollbar {
+  display: none
+}
+
+.list-style{
+  margin-left: 10px;
+}
+
+.list-height{
+  height: 200px;
+}
+
+.browse-bg-style{
+  background-image: url('./images/turntable3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 500px;
+  padding-top: 100px;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.seventy-bg-style{
+  background-image: url('./images/70sllcool.jpg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 500px;
+  box-shadow: 3px 3px 3px grey;
+}
+.eighty-bg-style{
+  background-image: url('./images/80s.jpg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 500px;
+  box-shadow: 3px 3px 3px grey;
+}
+.ninety-bg-style{
+  background-image: url('./images/90s.jpg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 500px;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.userlist-container{
+  background-image: url('./images/hiphopcrowd1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  padding-top: 20px;
+  margin-top: 10px;
+} 
+
+.song-button{
+  background-color: lightslategrey;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+.dashboard-song-button{
+  background-color: lightslategrey;
+  opacity: 0.9;
+  border-radius: 15px;
+  width: 85%;
+  text-align: left;
+  margin: 1px;
+}
+
+.cover-style{
+  width: 185px;
+  height: 185x;
+  border: solid;
+  border-color: white;
+  margin-left: 150px;
+}
+
+.song-details-style{
+  box-shadow: 5px 5px 5px grey;
+}
