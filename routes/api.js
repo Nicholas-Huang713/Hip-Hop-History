@@ -8,8 +8,8 @@ const bcrypt = require('bcryptjs');
 //GET ALL USERS
 router.get('/', (req, res) => {
     Users.find({})
-    .then((data) => {res.json(data);})
-    .catch((error) => {console.log('Error: ' + error);});
+    .then((data) => {res.json(data)})
+    .catch((error) => {console.log('Error: ' + error)});
 });
 
 //CHOOSE BACKGROUND THEME
@@ -18,8 +18,8 @@ router.put('/theme/:bgurl', verifyToken, (req, res) => {
     Users.findByIdAndUpdate({_id: decodedId}, { $set: {bgurl: req.params.bgurl}})
     .then(() => {
         Users.find({_id: decodedId})
-        .then((data) => {res.json(data);})
-        .catch((error) => {res.json(error);});
+        .then((data) => {res.json(data)})
+        .catch((error) => {res.json(error)});
     })
     .catch(err => res.json(err));
 });
