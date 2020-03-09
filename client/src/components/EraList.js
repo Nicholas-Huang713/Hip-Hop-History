@@ -99,24 +99,24 @@ class EraList extends React.Component {
             songList = ninetyList;
         }
         return( 
-            <div className={`container mt-2 text-left ${bgUrl}`}>
-                <div className="era-title"><h1 className="text-white bg-dark">The {era}'s</h1></div>
+            <div className={`mt-2 text-left dashboard-height ${bgUrl}`}>
+                <div className="era-title col-l-3 col-m-6 col-4 col-s-12"><h1 className="text-white bg-dark">The {era}'s</h1></div>
                 <div className="list-container">                
                     {
                         songList.map((song) => {
                             return (
                                 <div className="list-style" key={song.id}>
-                                    {
-                                        stringList.includes(parseInt(song.id)) ?
-                                        <img onClick={() => this.unlikeSong(song.id)} src={liked} className="like-button" alt="like button" />
-                                        :
-                                        <img onClick={() => this.likeSong(song.id)} src={unliked} className="like-button" alt="unlike button" />
-                                    }
-                                    <button className="song-button" onClick={() => chooseSong(song.id)}> 
-                                        <img src={song.album.cover_small} alt="artist" /> 
-                                        <b>{song.artist.name}</b> - {song.title} 
-                                    </button>   
-                                </div>  
+                                        {
+                                            stringList.includes(parseInt(song.id)) ?
+                                            <img onClick={() => this.unlikeSong(song.id)} src={liked} className="like-button" alt="like button" />
+                                            :
+                                            <img onClick={() => this.likeSong(song.id)} src={unliked} className="like-button" alt="unlike button" />
+                                        }
+                                        <button className="song-button col-s-12 col-l-4 col-5 col-m-9 text-left" onClick={() => chooseSong(song.id)}> 
+                                            <img src={song.album.cover_small} alt="artist" /> 
+                                            <b>{song.artist.name}</b> - {song.title} 
+                                        </button>   
+                                </div>
                             )       
                         })
                     }

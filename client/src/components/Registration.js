@@ -63,7 +63,7 @@ class Registration extends React.Component {
     render() {
         const {errorMsg} = this.state;
         return (
-            <div className="container regform-container mt-3">
+            <div className="regform-container mt-3">
                 <div className="regform-style">
                     <h3 className="text-center">Create Your Account</h3>
                     <p className="text-danger text-center text-uppercase font-italic">{errorMsg}</p>
@@ -104,7 +104,7 @@ class Registration extends React.Component {
                                     onChange={this.handleChange}                            
                             />
                         </div>
-                        <button className="btn btn-outline-dark">Create Account</button>
+                        <button className="btn btn-dark">Create Account</button>
                     </form>
                 </div>
             </div> 

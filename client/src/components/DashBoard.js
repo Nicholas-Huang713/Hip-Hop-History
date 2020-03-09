@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import axios from 'axios';
 import {getJwt} from '../helpers/jwt';
 import '../App.css';
@@ -148,7 +148,7 @@ class DashBoard extends React.Component {
                     </div>
                     <div className="col">
                         <div className="mt-2 ml-4">
-                            <h5>Other User's Playlists</h5>
+                            <h5>See What Others Are Listening To</h5>
                         </div> 
                         <div className="dashboard-list-style">
                             {
@@ -159,7 +159,7 @@ class DashBoard extends React.Component {
                                     return (
                                         <div>
                                             <button className="btn dashboard-song-button" onClick={() => this.props.history.push(`/dashboard/${user._id}`)}> 
-                                                {user.firstname}'s Playlist                     
+                                                <h5 className="text-center">{user.firstname}'s Playlist </h5>                  
                                             </button>   
                                         </div>
                                     )

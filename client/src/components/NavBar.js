@@ -42,7 +42,7 @@ class NavBar extends React.Component{
             <div>
                 {
                     localStorage.getItem("token") ? 
-                        <div className="container  mt-3">
+                        <div className="mt-3 ml-3 mr-3">
                             <div className="row">
                                 <div className="col text-left">
                                     {
@@ -52,10 +52,10 @@ class NavBar extends React.Component{
                                         <button className="btn btn-outline-dark" onClick={this.handleBrowseClick}>Browse Music</button>
                                     }
                                 </div>
-                                <div className="col">
+                               
                                     {
                                         (localStorage.getItem("token") && browsePage) ? 
-                                        <div className="btn-group btn-group-lg" role="group" aria-label="Button Navigation">
+                                        <div className="btn-group" role="group" aria-label="Button Navigation">
                                             <button type="button" className="btn btn-info" onClick={this.props.handleDiscover}>Discover</button>
                                             <button type="button" className="btn btn-outline-dark" onClick={this.handleSeventies}>70's</button>
                                             <button type="button" className="btn btn-outline-dark" onClick={this.handleEighties}>80's</button>
@@ -64,7 +64,7 @@ class NavBar extends React.Component{
                                         :
                                         <span></span>
                                     }
-                                </div>
+                            
                                 <div className="col text-right">
                                     <button className="btn btn-outline-dark" onClick={this.removeToken}>Logout</button>
                                 </div>

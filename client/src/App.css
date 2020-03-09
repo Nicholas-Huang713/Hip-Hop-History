@@ -1,49 +1,109 @@
-.App {
-  background-size: 100% 100%;
-  height: 100%;
+[class*="col-"] {
+  width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .dashboard-height{
+    height:600px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+  .dashboard-height{
+    height:600px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .dashboard-height{
+    height:600px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+  .dashboard-height{
+    height:600px;
+  }
+} 
+
 .page_header{
-  padding-top: 5px;
-  height: 100px;
+  height: 100%;
   width: 100%;
 }
 
 .logo{
-  width: 90px;
-  height: 90px;
-  border-radius: 25px;
-  margin-bottom: 60%;;
-}
-
-.era-title{
-  width: 180px;
-  padding-left: 10px;
+  height: 70px;
+  border-radius: 20%;
 }
 
 .home-style{
   background-image: url('./images/turntable.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 500px;
+  background-size: cover;
+  height: 600px;
   box-shadow: 3px 3px 3px grey;
-}
-
-.header_item{
-  display: inline-block;
-  padding-right: 10px;
 }
 
 .logform-container{
   background-image: url('./images/hiphopcrowd1.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 500px;
+  background-size: cover;
+  height: 600px;
 } 
 
 .logform-style {
-  width: 50%; 
-  margin-left: 25%;
+  width: 40%; 
+  margin-left: 30%;
   padding-top: 6%; 
   color: #026e81;
 }
@@ -51,66 +111,66 @@
 .regform-container{
   background-image: url('./images/mic.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 500px;
+  background-size: cover;
+  height: 600px;
 } 
 
 .regform-style{
-  width: 50%; 
-  margin-left: 25%;
+  width: 40%; 
+  margin-left: 30%;
   padding: 2% 1%; 
   color: #026e81;
 }
 
 .dashboard{
-  height: 500px;
   width: 100%;
   background-image: url('./images/records.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  /* height: 600px; */
   box-shadow: 3px 3px 3px grey;
   padding-top: 5px;
 }
 
 .dashboard1{
-  height: 500px;
   width: 100%;
   background-image: url('./images/djblue.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  /* height: 600px;   */
   box-shadow: 3px 3px 3px grey;
 }
 
 .dashboard2{
-  height: 500px;
   width: 100%;
   background-image: url('./images/audience.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  /* height: 600px; */
   box-shadow: 3px 3px 3px grey;
 }
 
 .dashboard3{
-  height: 500px;
   width: 100%;
   background-image: url('./images/records.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  /* height: 600px; */
   box-shadow: 3px 3px 3px grey;
 }
 
 .dashboard4{
-  height: 500px;
   width: 100%;
   background-image: url('./images/turntable2.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  /* height: 600px; */
   box-shadow: 3px 3px 3px grey;
 }
 
 .dashboard-list-style{
   margin-left: 20px;
-  height: 350px;
+  height: 450px;
   overflow-y: scroll;
 }
 
@@ -128,8 +188,14 @@
   background-color: transparent;
 }
 
+.favorite-list-unlike-button:hover{
+  border: black;
+  color: white;
+  font-weight: bolder;
+}
+
 .list-container{
-  height: 400px;
+  height: 490px;
   overflow-y: scroll;
 }
 
@@ -138,7 +204,7 @@
 }
 
 .list-style{
-  margin-left: 10px;
+  margin-left: 6%;
 }
 
 .list-height{
@@ -148,8 +214,8 @@
 .browse-bg-style{
   background-image: url('./images/turntable3.jpg');
   background-repeat: no-repeat;
-  background-size: cover ;
-  height: 500px;
+  background-size: cover;
+  height: 600px;
   padding-top: 100px;
   box-shadow: 3px 3px 3px grey;
 }
@@ -157,30 +223,30 @@
 .seventy-bg-style{
   background-image: url('./images/70sllcool.jpg');
   background-repeat: no-repeat;
-  background-size: cover ;
-  height: 500px;
+  background-size: cover;
+  height: 600px;
   box-shadow: 3px 3px 3px grey;
 }
 .eighty-bg-style{
   background-image: url('./images/80s.jpg');
   background-repeat: no-repeat;
   background-size: cover ;
-  height: 500px;
+  height: 600px;
   box-shadow: 3px 3px 3px grey;
 }
 .ninety-bg-style{
   background-image: url('./images/90s.jpg');
   background-repeat: no-repeat;
   background-size: cover ;
-  height: 500px;
+  height: 600px;
   box-shadow: 3px 3px 3px grey;
 }
 
 .userlist-container{
   background-image: url('./images/hiphopcrowd1.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 500px;
+  background-size: cover;
+  height: 600px;
   padding-top: 20px;
   margin-top: 10px;
 } 
@@ -189,6 +255,11 @@
   background-color: lightslategrey;
   opacity: 0.8;
   border-radius: 15px;
+}
+
+.song-button:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .dashboard-song-button{
@@ -200,12 +271,17 @@
   margin: 1px;
 }
 
+.dashboard-song-button:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
 .cover-style{
   width: 185px;
   height: 185x;
   border: solid;
   border-color: white;
-  margin-left: 150px;
+  margin-left: 10%;
 }
 
 .song-details-style{

@@ -90,7 +90,8 @@ class FavoriteList extends React.Component {
                                 <button className="favorite-list-unlike-button" onClick={() => this.unlikeSong(song.id)}>X</button>
                                 <button className="btn dashboard-song-button" onClick={() => chooseSong(song.id)}> 
                                     <div className="media"> 
-                                        <img src={song.album.cover_small} alt="artist" />
+                                    <div className="view zoom"><img src={song.album.cover_small} alt="artist" /></div>
+                                        
                                         <div className="media-body ml-3 mt-3">
                                             <b>{song.artist.name}</b> - {song.title} 
                                         </div>

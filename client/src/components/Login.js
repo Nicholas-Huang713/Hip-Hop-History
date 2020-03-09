@@ -51,7 +51,7 @@ class Login extends React.Component {
     render() {
         const {errorMsg} = this.state;
         return (
-          <div className="container logform-container mt-3">
+          <div className="logform-container mt-3">
             <form className="logform-style" onSubmit={this.handleLogin}>
                 <h3 className="text-center">Login Here</h3>
                  <p className="text-danger text-center text-uppercase font-italic">{errorMsg}</p>

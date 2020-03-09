@@ -27,9 +27,9 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const seventyIds = [3824597, 3824607, 131224316, 458844802, 65724608, 409962402];
-    const eightyIds = [3200551, 116945540, 112658750, 409962042, 12343556, 78034213, 116945536];
-    const ninetyIds = [627421302, 70816229, 3616616, 66027422, 377242021, 77096692, 65938214, 409964442, 15220137];
+    const seventyIds = [3824597, 3824607, 131224316, 458844802, 65724608, 409962402, 409962392, 541741502, 1580525, 73526356, 511626682];
+    const eightyIds = [2300829, 3200551, 116945540, 112658750, 409962042, 12343556, 78034213, 116945536, 6627454, 2300839, 623723392];
+    const ninetyIds = [627421302, 70816229, 3616616, 66027422, 377242021, 77096692, 65938214, 409964442, 15220137, 66853804];
     const seventyList = [];
     const eightyList = [];
     const ninetyList = [];
@@ -132,41 +132,36 @@ class App extends React.Component {
   render() {
     const {currentSong} = this.state;
     return (
-      <div className="App"> 
-        <div className="container">
-          <Router> 
-            <div className="page_header border-dark border-bottom">
-                <div className="header_item">
-                  <Link to="/"><img src={logo} className="logo" alt="logo"/></Link>
-                </div>
-                <div className="header_item">
-                  <h1>Hip Hop History</h1>
-                  <p>Listen to the evolution of Hip Hop's sound.</p>
-                </div>
-            </div>
-            <NavBar handleDiscover={this.handleDiscover} resetState={this.resetState}/>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/login" render={(props) => <Login {...props} renderPage={this.renderPage} />} />
-              <Route path="/register" render={(props) => <Registration {...props} renderPage={this.renderPage} />} />
-              <PrivateRoute>
-                <Route exact path='/dashboard' render={(props) => <DashBoard {...props} chooseSong={this.chooseSong} renderPage={this.renderPage} />} />
-                <Route path='/dashboard/:id' render={(props) => <PlaylistDetails {...props} chooseSong={this.chooseSong}/>} />
-                <Route exact path='/browse' component={AllMusic} />
-                <Route path='/browse/:era' render={(props) => 
-                  <EraList {...props} seventyList={this.state.seventyList} eightyList={this.state.eightyList} ninetyList={this.state.ninetyList} renderPage={this.renderPage} chooseSong={this.chooseSong} />} 
-                />
-              </PrivateRoute>
-            </Switch>
-        </Router>
-        </div> 
+      <div>
+        <Router> 
+          <nav className="navbar navbar-light bg-dark">
+                <div className="navbar-brand text-white">
+                  <Link to="/"><img src={logo} className="logo border-white mr-1" alt="logo"/></Link>
+                   <span className="h2">Hip Hop History</span>
+                </div> 
+          </nav>
+          <NavBar handleDiscover={this.handleDiscover} resetState={this.resetState}/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/login" render={(props) => <Login {...props} renderPage={this.renderPage} />} />
+            <Route path="/register" render={(props) => <Registration {...props} renderPage={this.renderPage} />} />
+            <PrivateRoute>
+              <Route exact path='/dashboard' render={(props) => <DashBoard {...props} chooseSong={this.chooseSong} renderPage={this.renderPage} />} />
+              <Route path='/dashboard/:id' render={(props) => <PlaylistDetails {...props} chooseSong={this.chooseSong}/>} />
+              <Route exact path='/browse' component={AllMusic} />
+              <Route path='/browse/:era' render={(props) => 
+                <EraList {...props} seventyList={this.state.seventyList} eightyList={this.state.eightyList} ninetyList={this.state.ninetyList} renderPage={this.renderPage} chooseSong={this.chooseSong} />} 
+              />
+            </PrivateRoute>
+          </Switch>
+        </Router> 
         {
           (currentSong && localStorage.getItem("token")) ?
-           <SongDetails song={currentSong}/> 
+          <SongDetails song={currentSong}/> 
           :
-           <span></span>   
+          <span></span>   
         }
-      </div>
+      </div> 
     );
   }
 }
