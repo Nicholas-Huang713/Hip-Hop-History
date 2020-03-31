@@ -134,7 +134,7 @@ class App extends React.Component {
     return (
       <div>
         <Router> 
-          <nav className="navbar navbar-light bg-dark">
+          <nav className="navbar navbar-light bg-dark"> 
                 <div className="navbar-brand text-white">
                   <Link to="/"><img src={logo} className="logo border-white mr-1" alt="logo"/></Link>
                    <span className="h2">Hip Hop History</span>

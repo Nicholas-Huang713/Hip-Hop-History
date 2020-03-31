@@ -113,7 +113,6 @@ class DashBoard extends React.Component {
         } else{
             firstName = currentUser[0].firstname;
         }
-        
         return(
             <div className={`${bgUrl} mt-2`}>
                 <div className="border-dark border-bottom mt-1 ml-3 ">
