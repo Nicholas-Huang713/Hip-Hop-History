@@ -9,6 +9,10 @@ const UserSchema = new Schema({
     email: String,
     password: String,
     favelist: [],
+    theme: {
+        type: String,
+        default: "dashboard"
+    },
     date: {
         type: String,
         default: Date.now()

@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 //CHOOSE BACKGROUND THEME
 router.put('/theme/:bgurl', verifyToken, (req, res) => {
     const decodedId = jwt.verify(req.token,  process.env.TOKEN_SECRET);
-    Users.findByIdAndUpdate({_id: decodedId}, { $set: {bgurl: req.params.bgurl}})
+    Users.updateOne({_id: decodedId}, {$set: {theme: req.params.bgurl}})
     .then(() => {
         Users.find({_id: decodedId})
         .then((data) => {res.json(data)})

@@ -37,22 +37,16 @@ class DashBoard extends React.Component {
         })
         .then((res) => {
             const user = res.data;
-            const randomBackground = this.randomBackground();
+            
             this.setState({
                 currentUser: user, 
-                bgUrl: randomBackground
+                bgUrl: user[0].theme
             });
             this.pushToList(user[0].favelist);
         })
         .catch((err) => {
             console.log('Error:' + err);
         });
-    }
-
-    randomBackground() {
-        const backgroundList = ['dashboard1','dashboard2','dashboard3','dashboard4' ];
-        const randNum = Math.floor(Math.random() * 4);
-        return backgroundList[randNum];
     }
 
     pushToList(list){
@@ -104,6 +98,23 @@ class DashBoard extends React.Component {
         });
     };
 
+    chooseTheme = (e) => {
+        e.preventDefault();
+        const jwt = getJwt();
+        const {bgUrl} = this.state;
+        axios({
+            url: `/api/theme/${bgUrl}`,
+            method: 'PUT',
+            headers: {'Authorization' : `Bearer ${jwt}`}
+        })
+        .then(() => {
+            console.log("Background Theme updated")
+        })
+        .catch((err) => {
+            console.log('Error:' + err);
+        });
+    }
+
     render() {
         const {currentUser, faveList, allUsers, bgUrl} = this.state;
         const {chooseSong} = this.props;
@@ -122,18 +133,21 @@ class DashBoard extends React.Component {
                             <div className="form-group mt-2 ml-6">
                                 Choose a Theme
                                 <br/>
-                                <select value={this.state.bgUrl} onChange={this.handleChange} className="theme-dropdown">
-                                    <option value="dashboard1">Oceans11</option>
-                                    <option value="dashboard2">OrangeIsTheNewBlack</option>
-                                    <option value="dashboard3">PlatinumRecords</option>
-                                    <option value="dashboard4">HipHopYouDontStop</option>
-                                </select>
+                                <form onSubmit={this.chooseTheme}>
+                                    <select value={this.state.bgUrl} onChange={this.handleChange} className="theme-dropdown">
+                                        <option value="dashboard1">Oceans11</option>
+                                        <option value="dashboard2">OrangeIsTheNewBlack</option>
+                                        <option value="dashboard3">PlatinumRecords</option>
+                                        <option value="dashboard4">HipHopYouDontStop</option>
+                                    </select>
+                                    <button>Save</button>
+                                </form>
                             </div>
                         </div>
                     </div>    
                 </div>
                 <div className="row">                   
-                    <div className="col">
+                    <div className="col-sm">
                         <div className="mt-2 ml-4">
                             <h5>My Playlist</h5>
                         </div>
@@ -145,7 +159,7 @@ class DashBoard extends React.Component {
                             />                                                  
                         </div>  
                     </div>
-                    <div className="col">
+                    <div className="col-sm">
                         <div className="mt-2 ml-4">
                             <h5>See What Others Are Listening To</h5>
                         </div> 

@@ -8,11 +8,6 @@ class NavBar extends React.Component{
             browsePage: false
         }
     }
-    removeToken = () => {
-        localStorage.removeItem("token");
-        this.props.resetState();
-        this.props.history.push('/');
-    };
 
     handleBrowseClick = () => {
         this.setState({browsePage: true});
@@ -52,7 +47,7 @@ class NavBar extends React.Component{
                                         <button className="btn btn-outline-dark" onClick={this.handleBrowseClick}>Browse Music</button>
                                     }
                                 </div>
-                               
+                                <div className="col text-center">
                                     {
                                         (localStorage.getItem("token") && browsePage) ? 
                                         <div className="btn-group" role="group" aria-label="Button Navigation">
@@ -64,9 +59,9 @@ class NavBar extends React.Component{
                                         :
                                         <span></span>
                                     }
-                            
-                                <div className="col text-right">
-                                    <button className="btn btn-outline-dark" onClick={this.removeToken}>Logout</button>
+                                </div>
+                                <div className="col">
+                                    
                                 </div>
                             </div>
                         </div>

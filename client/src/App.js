@@ -129,6 +129,12 @@ class App extends React.Component {
     this.forceUpdate();
   }
 
+  removeToken = () => {
+    localStorage.removeItem("token");
+    this.resetState();
+    // this.props.history.push('/');
+  };
+
   render() {
     const {currentSong} = this.state;
     return (
@@ -137,8 +143,15 @@ class App extends React.Component {
           <nav className="navbar navbar-light bg-dark"> 
                 <div className="navbar-brand text-white">
                   <Link to="/"><img src={logo} className="logo border-white mr-1" alt="logo"/></Link>
-                   <span className="h2">Hip Hop History</span>
+                   <span className="h3">Hip Hop History</span>
                 </div> 
+                {
+                  localStorage.getItem("token") &&
+                  <span className="navbar-text">
+                    <Link to="/"><button className="btn btn-outline-info" onClick={this.removeToken}>Logout</button></Link>
+                  </span>
+                }
+                
           </nav>
           <NavBar handleDiscover={this.handleDiscover} resetState={this.resetState}/>
           <Switch>
@@ -159,7 +172,7 @@ class App extends React.Component {
           (currentSong && localStorage.getItem("token")) ?
           <SongDetails song={currentSong}/> 
           :
-          <span></span>   
+          <div className="bg-dark song-detail-placeholder text-center"></div>   
         }
       </div> 
     );

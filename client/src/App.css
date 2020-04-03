@@ -1,5 +1,3 @@
-
-
 .page_header{
   height: 100%;
   width: 100%;
@@ -11,10 +9,10 @@
 }
 
 .home-style{
-  background-image: url('./images/turntable.png');
+  background-image: url('./images/turntable.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
   box-shadow: 3px 3px 3px grey;
 }
 
@@ -22,7 +20,7 @@
   background-image: url('./images/hiphopcrowd1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
 } 
 
 .logform-style {
@@ -36,7 +34,7 @@
   background-image: url('./images/mic.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
 } 
 
 .regform-style{
@@ -48,10 +46,10 @@
 
 .dashboard{
   width: 100%;
-  background-image: url('./images/records.png');
+  background-image: url('./images/records.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
   box-shadow: 3px 3px 3px grey;
   padding-top: 5px;
   overflow-y: hidden;
@@ -63,7 +61,7 @@
   background-image: url('./images/djblue.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;  
+  height: 70vh;  
   box-shadow: 3px 3px 3px grey;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -74,7 +72,7 @@
   background-image: url('./images/audience.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
   box-shadow: 3px 3px 3px grey;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -82,10 +80,10 @@
 
 .dashboard3{
   width: 100%;
-  background-image: url('./images/records.png');
+  background-image: url('./images/records.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
   box-shadow: 3px 3px 3px grey;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -96,15 +94,15 @@
   background-image: url('./images/turntable2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
   box-shadow: 3px 3px 3px grey;
   overflow-y: hidden;
   overflow-x: hidden;
 }
 
 .dashboard-list-style{
-  margin-left: 20px;
-  height: 430px;
+  margin-left: 20px; 
+  height: 50vh;
   overflow-y: scroll;
 }
 
@@ -129,7 +127,7 @@
 }
 
 .list-container{
-  height: 480px;
+  height: 60vh;
   overflow-y: scroll;
 }
 
@@ -137,9 +135,9 @@
   display: none
 }
 
-.list-style{
+/* .list-style{
   margin-left: 6%;
-}
+} */
 
 .list-height{
   height: 200px;
@@ -149,7 +147,7 @@
   background-image: url('./images/turntable3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
   padding-top: 100px;
   box-shadow: 3px 3px 3px grey;
 }
@@ -158,21 +156,21 @@
   background-image: url('./images/70sllcool.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
   box-shadow: 3px 3px 3px grey;
 }
 .eighty-bg-style{
   background-image: url('./images/80s.jpg');
   background-repeat: no-repeat;
   background-size: cover ;
-  height: 600px;
+  height: 70vh;
   box-shadow: 3px 3px 3px grey;
 }
 .ninety-bg-style{
   background-image: url('./images/90s.jpg');
   background-repeat: no-repeat;
   background-size: cover ;
-  height: 600px;
+  height: 70vh;
   box-shadow: 3px 3px 3px grey;
 }
 
@@ -180,7 +178,7 @@
   background-image: url('./images/hiphopcrowd1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 70vh;
   padding-top: 20px;
   margin-top: 10px;
 } 
@@ -189,6 +187,7 @@
   background-color: lightslategrey;
   opacity: 0.8;
   border-radius: 15px;
+  width: 90%;
 }
 
 .song-button:hover{
@@ -211,11 +210,14 @@
 }
 
 .cover-style{
-  width: 185px;
-  height: 185x;
+  /* width: 50%; */
+  height: 25vh;
   border: solid;
   border-color: white;
-  margin-left: 10%;
+}
+
+.song-detail-placeholder{
+  height: 15vh;
 }
 
 .song-details-style{
