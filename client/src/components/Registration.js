@@ -65,8 +65,8 @@ class Registration extends React.Component {
         return (
             <div className="regform-bg mt-3">
                 <div className="row">
-                    <div className="col"></div>
-                    <div className="col regform-container mt-5">                            
+                    <div className="col-sm"></div>
+                    <div className="col-sm regform-container mt-3">                            
                         <form className="regform-style" onSubmit={this.handleRegister}>
                             <h3 className="text-center">Create Your Account</h3>
                             <p className="text-danger text-center text-uppercase font-italic">{errorMsg}</p>
@@ -109,7 +109,7 @@ class Registration extends React.Component {
                             <button className="btn btn-dark">Create Account</button>
                         </form>
                     </div>
-                    <div className="col"></div>
+                    <div className="col-sm"></div>
                 </div>
                 
             </div> 

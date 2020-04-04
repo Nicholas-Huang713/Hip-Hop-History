@@ -29,9 +29,10 @@
 }
 
 .logform-style {
+  width: 100%;
   padding: 6%; 
   color: #026e81;
-  opacity:100%;
+  /* opacity:100%; */
 }
 
 .regform-bg{
@@ -47,6 +48,7 @@
 }
 
 .regform-style{
+  width: 100%;
   padding: 6%; 
   color: #026e81;
   opacity: 100%;

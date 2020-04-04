@@ -53,8 +53,8 @@ class Login extends React.Component {
         return (
           <div className="logform-bg mt-3">
             <div className="row">
-                <div className="col"></div>
-                <div className="col logform-container mt-5">
+                <div className="col-sm"></div>
+                <div className="col-sm logform-container mt-5">
                     <form className="logform-style" onSubmit={this.handleLogin}>
                         <h3 className="text-center">Login Here</h3>
                         <p className="text-danger text-center text-uppercase font-italic">{errorMsg}</p>
@@ -79,7 +79,7 @@ class Login extends React.Component {
                         <button className="btn btn-dark">Login</button>
                     </form>
                 </div>
-                <div className="col"></div>
+                <div className="col-sm"></div>
                 
             </div>
           </div>  
