@@ -16,31 +16,40 @@
   box-shadow: 3px 3px 3px grey;
 }
 
-.logform-container{
-  background-image: url('./images/hiphopcrowd1.jpg');
+.logform-bg{
+  background-image: url('./images/boomboxwall.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
 } 
 
-.logform-style {
-  width: 40%; 
-  margin-left: 30%;
-  padding-top: 6%; 
-  color: #026e81;
+.logform-container {
+  background-color: white;
+  opacity: 80%;
 }
 
-.regform-container{
-  background-image: url('./images/mic.jpg');
+.logform-style {
+  padding: 6%; 
+  color: #026e81;
+  opacity:100%;
+}
+
+.regform-bg{
+  background-image: url('./images/graffiti.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
 } 
 
+.regform-container {
+  background-color: white;
+  opacity: 80%;
+}
+
 .regform-style{
-  width: 40%; 
-  margin-left: 30%;
-  padding: 2% 1%; 
+  /* width: 40%;  */
+  /* margin-left: 30%; */
+  padding: 6%; 
   color: #026e81;
 }
 

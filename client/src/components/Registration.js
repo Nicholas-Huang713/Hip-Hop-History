@@ -63,50 +63,55 @@ class Registration extends React.Component {
     render() {
         const {errorMsg} = this.state;
         return (
-            <div className="regform-container mt-3">
-                <div className="regform-style">
-                    <h3 className="text-center">Create Your Account</h3>
-                    <p className="text-danger text-center text-uppercase font-italic">{errorMsg}</p>
-                    <form onSubmit={this.handleRegister}>
-                        <div className="form-group">
-                            <label>First Name</label>
-                            <input type="text" 
-                                    className="form-control"
-                                    name="firstName"                            
-                                    value={this.state.firstName}
-                                    onChange={this.handleChange}                            
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Last Name</label>
-                            <input type="text" 
-                                    className="form-control"
-                                    name="lastName"                            
-                                    value={this.state.lastName}
-                                    onChange={this.handleChange}                            
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Email address</label>
-                            <input type="text" 
-                                    className="form-control"
-                                    name="email"                            
-                                    value={this.state.email}
-                                    onChange={this.handleChange}                            
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Password</label>
-                            <input type="password" 
-                                    className="form-control"
-                                    name="password"                            
-                                    value={this.state.password}
-                                    onChange={this.handleChange}                            
-                            />
-                        </div>
-                        <button className="btn btn-dark">Create Account</button>
-                    </form>
+            <div className="regform-bg mt-3">
+                <div className="row">
+                    <div className="col"></div>
+                    <div className="col regform-container mt-5">                            
+                        <form className="regform-style" onSubmit={this.handleRegister}>
+                            <h3 className="text-center">Create Your Account</h3>
+                            <p className="text-danger text-center text-uppercase font-italic">{errorMsg}</p>
+                            <div className="form-group">
+                                <label>First Name</label>
+                                <input type="text" 
+                                        className="form-control"
+                                        name="firstName"                            
+                                        value={this.state.firstName}
+                                        onChange={this.handleChange}                            
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Last Name</label>
+                                <input type="text" 
+                                        className="form-control"
+                                        name="lastName"                            
+                                        value={this.state.lastName}
+                                        onChange={this.handleChange}                            
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Email address</label>
+                                <input type="text" 
+                                        className="form-control"
+                                        name="email"                            
+                                        value={this.state.email}
+                                        onChange={this.handleChange}                            
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label>Password</label>
+                                <input type="password" 
+                                        className="form-control"
+                                        name="password"                            
+                                        value={this.state.password}
+                                        onChange={this.handleChange}                            
+                                />
+                            </div>
+                            <button className="btn btn-dark">Create Account</button>
+                        </form>
+                    </div>
+                    <div className="col"></div>
                 </div>
+                
             </div> 
         )
     }
