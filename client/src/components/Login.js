@@ -44,7 +44,7 @@ class Login extends React.Component {
         this.setState({
             email: "",
             password: "",
-            errorMsg: "",
+            errorMsg: ""
         })
     }
 

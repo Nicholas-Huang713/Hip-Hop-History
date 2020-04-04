@@ -47,8 +47,6 @@
 }
 
 .regform-style{
-  /* width: 40%;  */
-  /* margin-left: 30%; */
   padding: 6%; 
   color: #026e81;
 }
@@ -143,10 +141,6 @@
 .list-container::-webkit-scrollbar {
   display: none
 }
-
-/* .list-style{
-  margin-left: 6%;
-} */
 
 .list-height{
   height: 200px;
