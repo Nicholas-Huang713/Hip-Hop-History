@@ -54,30 +54,32 @@ class Login extends React.Component {
           <div className="logform-bg mt-3">
             <div className="row">
                 <div className="col-sm"></div>
-                <div className="col-sm logform-container mt-5">
-                    <form className="logform-style" onSubmit={this.handleLogin}>
-                        <h3 className="text-center">Login Here</h3>
-                        <p className="text-danger text-center text-uppercase font-italic">{errorMsg}</p>
-                        <div className="form-group">
-                            <label>Email address</label>
-                            <input type="text" 
-                                    className="form-control"
-                                    name="email"                            
-                                    value={this.state.email}
-                                    onChange={this.handleChange}                            
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Password</label>
-                            <input type="password" 
-                                    className="form-control"
-                                    name="password"                            
-                                    value={this.state.password}
-                                    onChange={this.handleChange}                            
+                <div className="col-sm">
+                    <div className="logform-container mt-5">
+                        <form className="logform-style" onSubmit={this.handleLogin}>
+                            <h3 className="text-center">Login Here</h3>
+                            <p className="text-danger text-center text-uppercase font-italic">{errorMsg}</p>
+                            <div className="form-group">
+                                <label>Email address</label>
+                                <input type="text" 
+                                        className="form-control"
+                                        name="email"                            
+                                        value={this.state.email}
+                                        onChange={this.handleChange}                            
                                 />
-                        </div>
-                        <button className="btn btn-dark">Login</button>
-                    </form>
+                            </div>
+                            <div className="form-group">
+                                <label>Password</label>
+                                <input type="password" 
+                                        className="form-control"
+                                        name="password"                            
+                                        value={this.state.password}
+                                        onChange={this.handleChange}                            
+                                    />
+                            </div>
+                            <button className="btn btn-dark">Login</button>
+                        </form>
+                    </div>
                 </div>
                 <div className="col-sm"></div>
             </div>

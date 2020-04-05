@@ -20,16 +20,13 @@ mongoose.connect(
     () => console.log('connected to db!')
 );
 
-//Check for database connection
 mongoose.connection.on('connected', () => {
     console.log("Mongoose is connected!")
 })
 
-//Make data available to req.body 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-//Http request logger
 app.use(morgan('tiny'));
 app.use('/api', routes);
 
