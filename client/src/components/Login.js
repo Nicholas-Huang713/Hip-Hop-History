@@ -5,7 +5,7 @@ import axios from 'axios';
 class Login extends React.Component {
     constructor(props){
         super(props);
-        this.state ={
+        this.state = {
             email: "",
             password: "",
             errorMsg: ""
@@ -52,7 +52,6 @@ class Login extends React.Component {
         const {errorMsg} = this.state;
         return (
           <div className="logform-bg mt-3">
-            <h1 className="text-white">Login Page</h1>
             <div className="row">
                 <div className="col-sm"></div>
                 <div className="col-sm">
