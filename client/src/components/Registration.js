@@ -111,7 +111,6 @@ class Registration extends React.Component {
                     </div>
                     <div className="col-sm"></div>
                 </div>
-                
             </div> 
         )
     }

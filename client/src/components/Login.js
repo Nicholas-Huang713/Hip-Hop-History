@@ -80,7 +80,6 @@ class Login extends React.Component {
                     </form>
                 </div>
                 <div className="col-sm"></div>
-                
             </div>
           </div>  
         )
