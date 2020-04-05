@@ -64,10 +64,9 @@ class Registration extends React.Component {
         const {errorMsg} = this.state;
         return (
             <div className="regform-bg mt-3">
-                <h1 className="text-white">Reg Page</h1>
-                <div className="row">
-                    <div className="col-sm"></div>
-                    <div className="col-sm">
+                {/* <div className="row">
+                    <div className="col"></div>
+                    <div className="col"> */}
                         <div className="regform-container mt-4">
                             <form className="regform-style" onSubmit={this.handleRegister}>
                                 <h3 className="text-center">Create Your Account</h3>
@@ -111,9 +110,9 @@ class Registration extends React.Component {
                                 <button className="btn btn-dark">Create Account</button>
                             </form>
                         </div>                            
-                    </div>
-                    <div className="col-sm"></div>
-                </div>
+                    {/* </div>
+                    <div className="col"></div> */}
+                {/* </div> */}
             </div> 
         )
     }
