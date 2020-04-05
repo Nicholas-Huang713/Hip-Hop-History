@@ -64,6 +64,7 @@ class Registration extends React.Component {
         const {errorMsg} = this.state;
         return (
             <div className="regform-bg mt-3">
+                <h1 className="text-white">Reg Page</h1>
                 <div className="row">
                     <div className="col-sm"></div>
                     <div className="col-sm">
